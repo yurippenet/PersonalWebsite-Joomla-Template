@@ -16,6 +16,17 @@ $params = $app->getTemplate(true)->params;
         <jdoc:include type="head" />
 		
 		
+		<!-- external -->
+		<style>
+		@font-face {
+		font-family: Hero;
+		font-style: normal;
+		font-weight: normal;
+		src: url('<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/fonts/Hero Light.otf') format('opentype');
+		}
+		</style>
+		
+		
         <link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/foundation.css" />
         <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/vendor/modernizr.js"></script>
         <link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/styles.css" rel="stylesheet" type="text/css">
@@ -39,7 +50,7 @@ $params = $app->getTemplate(true)->params;
 	<?php endif; ?>
 	
 	<?php if($this->countModules('navbar')): ?>
-        <div class="row">
+        <div id="navbar-row" class="row">
             <div id="navbar" class="columns medium-12 small-12 large-12 layout">
                 <jdoc:include type="modules" name="navbar" style="none" />
             </div>
