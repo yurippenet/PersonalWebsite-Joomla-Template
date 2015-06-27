@@ -15,8 +15,7 @@ $params = $app->getTemplate(true)->params;
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <jdoc:include type="head" />
 		
-		
-		<!-- external -->
+		<!-- Fonts -->
 		<style>
 		@font-face {
 		font-family: Hero;
@@ -30,6 +29,7 @@ $params = $app->getTemplate(true)->params;
         <link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/foundation.css" />
         <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/vendor/modernizr.js"></script>
         <link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/styles.css" rel="stylesheet" type="text/css">
+		
 		<script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/vendor/jquery.js"></script>
         <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/foundation.min.js"></script>
         <script>

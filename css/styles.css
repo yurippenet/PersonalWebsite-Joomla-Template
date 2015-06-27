@@ -59,17 +59,29 @@
 
 #mainmenu a
 {
-		/*color: #ffffff;*/
-		color: #6699FF;
+		color: #939393;
 		text-decoration: none;
 		font-family: Hero;
+		font-size: 1em;
 }
 #mainmenu a:hover
 {
-        color: #660066;
+        color: #E6B800;
 		/*background: #F5F5F5;*/
 }
 	
+body
+{
+	background-image: url(/images/bg.jpg);
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.row
+{
+	background: #ffffff;
+}
 	
 #language-selection ul
 {
