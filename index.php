@@ -89,13 +89,23 @@ $params = $app->getTemplate(true)->params;
 	<jdoc:include type="modules" name="xpert-4" style="none" />
 	<?php endif; ?>
 	
+	
+	
+	<?php if($this->countModules('custom-article-start') and $this->countModules('custom-article-end')): ?>
+		<jdoc:include type="modules" name="custom-article-start" style="none" />
+		        <jdoc:include type="message" />
+				<jdoc:include type="component" />
+		<jdoc:include type="modules" name="custom-article-end" style="none" />
+				
+	<?php else: ?>
         <div class="row">
             <div id="article" class="columns medium-12 large-12 small-12 layout"> 
                 <jdoc:include type="message" />
 				<jdoc:include type="component" />   
             </div>
         </div>
-		
+	<?php endif; ?>
+	
 	<?php if($this->countModules('xpert-5')): ?>
 	<jdoc:include type="modules" name="xpert-5" style="none" />
 	<?php endif; ?>	
