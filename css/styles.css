@@ -49,8 +49,8 @@
 	
 	#navbar-row
 	{
-	background-color: #ffffff;
-	background-image: url(/images/navbar.png);
+	background-color: rgba(2,2,2,0.4);
+	/*background-image: url(/images/navbar.png);*/
 	background-repeat: repeat;
 	
 	}
@@ -59,7 +59,8 @@
 
 #mainmenu a
 {
-		color: #939393;
+		/*color: #939393;*/
+		color: rgba(255,255,255,0.9);
 		text-decoration: none;
 		font-family: Hero;
 		font-size: 1em;
@@ -80,7 +81,8 @@ body
 
 .row
 {
-	background: #ffffff;
+	background-color: rgba(240,240,240,0.8);
+	
 }
 	
 #language-selection ul
@@ -91,5 +93,15 @@ body
 #logo img
 {
 	height: 5em;
+}
+
+#logo-row
+{
+	background-color: rgba(240,240,240,0.0);
+}
+#logo img:hover
+{
+	box-shadow: 1px 0 13px rgba(255,255,255, 1);
+	transition: .4s;
 }
 
