@@ -88,3 +88,8 @@ body
 	float: right;
 }
 
+#logo img
+{
+	height: 5em;
+}
+

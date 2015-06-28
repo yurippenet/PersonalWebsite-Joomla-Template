@@ -38,6 +38,10 @@ $params = $app->getTemplate(true)->params;
     </head>
     <body>
 	
+	<?php if($this->countModules('xpert-1')): ?>
+	<jdoc:include type="modules" name="xpert-1" style="none" />
+	<?php endif; ?>
+	
 	<?php if($this->countModules('logo') or $this->countModules('language-selection')):?>
         <div class="row">
             <div id="logo" class="columns layout small-6 medium-6 large-6"> 
@@ -49,12 +53,20 @@ $params = $app->getTemplate(true)->params;
         </div>
 	<?php endif; ?>
 	
+	<?php if($this->countModules('xpert-2')): ?>
+	<jdoc:include type="modules" name="xpert-2" style="none" />
+	<?php endif; ?>
+	
 	<?php if($this->countModules('navbar')): ?>
         <div id="navbar-row" class="row">
             <div id="navbar" class="columns medium-12 small-12 large-12 layout">
                 <jdoc:include type="modules" name="navbar" style="none" />
             </div>
         </div>
+	<?php endif; ?>
+	
+	<?php if($this->countModules('xpert-3')): ?>
+	<jdoc:include type="modules" name="xpert-3" style="none" />
 	<?php endif; ?>
 	
 	<?php if($this->countModules('position-1')): ?>
@@ -73,6 +85,9 @@ $params = $app->getTemplate(true)->params;
         </div>
 	<?php endif; ?>
 	
+	<?php if($this->countModules('xpert-4')): ?>
+	<jdoc:include type="modules" name="xpert-4" style="none" />
+	<?php endif; ?>
 	
         <div class="row">
             <div id="article" class="columns medium-12 large-12 small-12 layout"> 
@@ -81,12 +96,20 @@ $params = $app->getTemplate(true)->params;
             </div>
         </div>
 		
+	<?php if($this->countModules('xpert-5')): ?>
+	<jdoc:include type="modules" name="xpert-5" style="none" />
+	<?php endif; ?>	
+	
 	<?php if($this->countModules('position-3')): ?>
         <div class="row">
             <div id="position-3" class="columns medium-12 large-12 small-12 layout"> 
                 <jdoc:include type="modules" name="position-3" style="none" />
             </div>
         </div>
+	<?php endif; ?>
+	
+	<?php if($this->countModules('xpert-6')): ?>
+	<jdoc:include type="modules" name="xpert-6" style="none" />
 	<?php endif; ?>
 	
 	<?php if($this->countModules('position-4') or $this->countModules('position-5') or $this->countModules('position-6')): ?>
@@ -102,6 +125,10 @@ $params = $app->getTemplate(true)->params;
             </div>
         </div>
 	<?php endif; ?>	
+	
+	<?php if($this->countModules('xpert-7')): ?>
+	<jdoc:include type="modules" name="xpert-7" style="none" />
+	<?php endif; ?>
 	
 	<?php if($this->countModules('position-7')): ?>	
         <div class="row">

@@ -30,6 +30,13 @@
 		<position>position-5</position>
 		<position>position-6</position>
 		<position>position-7</position>
+		<position>xpert-1</position>
+		<position>xpert-2</position>
+		<position>xpert-3</position>
+		<position>xpert-4</position>
+		<position>xpert-5</position>
+		<position>xpert-6</position>
+		<position>xpert-7</position>
 		<position>bottom-navbar</position>
 		<position>footer</position>
 	</positions>
