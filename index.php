@@ -21,6 +21,13 @@ $params = $app->getTemplate(true)->params;
 		font-family: Hero;
 		font-style: normal;
 		font-weight: normal;
+		src: url('<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/fonts/Hero.otf') format('opentype');
+		}
+		
+		@font-face {
+		font-family: Hero Light;
+		font-style: normal;
+		font-weight: normal;
 		src: url('<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/fonts/Hero Light.otf') format('opentype');
 		}
 		</style>
@@ -43,7 +50,7 @@ $params = $app->getTemplate(true)->params;
 	<?php endif; ?>
 	
 	<?php if($this->countModules('logo') or $this->countModules('language-selection')):?>
-        <div class="row">
+        <div id="logo-row" class="row">
             <div id="logo" class="columns layout small-6 medium-6 large-6"> 
                 <jdoc:include type="modules" name="logo" style="none" />
             </div>
