@@ -163,6 +163,12 @@ $params = $app->getTemplate(true)->params;
         </div>
 	<?php endif; ?>
 	
+	
+	<?php if($this->countModules('xpert-8')): ?>
+	<jdoc:include type="modules" name="xpert-8" style="none" />
+	<?php endif; ?>
+	
+	
 	<?php if($this->countModules('footer')): ?>
         <div class="row">
             <div id="footer" class="columns medium-12 small-12 large-12 layout">
