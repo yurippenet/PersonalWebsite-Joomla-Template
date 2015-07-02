@@ -42,6 +42,7 @@ $params = $app->getTemplate(true)->params;
         <script>
       $(document).foundation();
     </script>
+	<script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/consult.js"></script>
     </head>
     <body>
 	
