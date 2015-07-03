@@ -42,6 +42,8 @@
 		<position>custom-article-end</position>
 		<position>bottom-navbar</position>
 		<position>footer</position>
+		<position>customStyle</position>
+		<position>customHead</position>
 	</positions>
 	<config>
 		<fields name="params">

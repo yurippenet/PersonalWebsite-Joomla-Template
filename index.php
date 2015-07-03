@@ -42,8 +42,18 @@ $params = $app->getTemplate(true)->params;
         <script>
       $(document).foundation();
     </script>
+	
 	<script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/consult.js"></script>
-    </head>
+	<?php if($this->countModules('customStyle')):?>
+    <style>
+	<jdoc:include type="modules" name="customStyle" style="none" />
+	</style>
+	<?php endif; ?>
+	
+	<?php if($this->countModules('customHead')):?>
+	<jdoc:include type="modules" name="customHead" style="none" />
+	<?php endif; ?>
+	</head>
     <body>
 	
 	<?php if($this->countModules('xpert-1')): ?>
@@ -52,10 +62,10 @@ $params = $app->getTemplate(true)->params;
 	
 	<?php if($this->countModules('logo') or $this->countModules('language-selection')):?>
         <div id="logo-row" class="row">
-            <div id="logo" class="columns layout small-6 medium-6 large-6"> 
+            <div id="logo" class="columns layout small-12 medium-6 large-6"> 
                 <jdoc:include type="modules" name="logo" style="none" />
             </div>
-            <div id="language-selection" class="columns layout medium-6 large-6 small-6"> 
+            <div id="language-selection" class="columns layout medium-6 large-6 small-12"> 
                 <jdoc:include type="modules" name="language-selection" style="none" />
             </div>
         </div>
