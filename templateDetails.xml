@@ -18,6 +18,7 @@
 		<folder>html</folder>
 		<folder>js</folder>
 		<folder>fonts</folder>
+		<folder>slick</folder>
 	</files>
 	<positions>
 		<position>logo</position>
@@ -52,6 +53,16 @@
 					label="Website Title"
 					description="The name of your company"
 					filter="string" />
+				<field name="slickCarousel"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Include Slick Carousel"
+					description="Includes css and javascript for Slick Carousel"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
 			</fieldset>
 		</fields>
 	</config>

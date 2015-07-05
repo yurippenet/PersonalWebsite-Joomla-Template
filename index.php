@@ -43,6 +43,14 @@ $params = $app->getTemplate(true)->params;
       $(document).foundation();
     </script>
 	
+	<?php if($params->get("slickCarousel")): ?>
+	
+	<link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/slick/slick-theme.css"/>
+	<script type="text/javascript" src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/slick/slick.min.js"></script>
+	
+	<?php endif; ?>
+	
 	<script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/consult.js"></script>
 	<?php if($this->countModules('customStyle')):?>
     <style>
@@ -109,7 +117,7 @@ $params = $app->getTemplate(true)->params;
 	
 	
 	
-	<?php if($this->countModules('custom-article-start') and $this->countModules('custom-article-end')): ?>
+	<?php if($this->countModules('custom-article-start') or $this->countModules('custom-article-end')): ?>
 		<jdoc:include type="modules" name="custom-article-start" style="none" />
 		        <jdoc:include type="message" />
 				<jdoc:include type="component" />
