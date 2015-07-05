@@ -42,8 +42,7 @@ $params = $app->getTemplate(true)->params;
         <script>
       $(document).foundation();
     </script>
-	
-	<?php if($params->get("slickCarousel")): ?>
+	<?php if($this->params->get("slickcarousel")): ?>
 	
 	<link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/slick/slick-theme.css"/>

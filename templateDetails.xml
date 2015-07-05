@@ -49,11 +49,7 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field name="sitetitle"  type="text" default=""
-					label="Website Title"
-					description="The name of your company"
-					filter="string" />
-				<field name="slickCarousel"
+				<field name="slickcarousel"
 					type="radio"
 					class="btn-group btn-group-yesno"
 					default="1"
