@@ -34,14 +34,7 @@ h2{
 	{
         display: none;
     }
-	
-	body
-	{
-	background-image: url(/images/bgm.jpg);
-	background-color: #ffffff;
-	background-repeat: no-repeat;
-	background-size: cover;
-	}
+
 }
 
 @media (min-width:768px)
@@ -67,17 +60,18 @@ h2{
 	{
 		padding-left: 0px;
 		margin-left: 0px;
-	}
+	}	
 	
-	body
+}
+
+body
 	{
 	background-image: url(/images/bg.jpg);
 	background-color: #ffffff;
 	background-repeat: no-repeat;
 	background-size: cover;
-	}	
-	
-}
+	font-family: Hero;
+	}
 
 #navbar-row
 {
@@ -101,9 +95,14 @@ h2{
 		/*background: #F5F5F5;*/
 }
 
+#mainmenu .current a
+{
+	color: #E6B800;
+}
 .row
 {
 	background-color: rgba(240,240,240,0.8);
+	margin: 1em, 1em, 0, 0;
 	
 }
 	
@@ -137,4 +136,34 @@ h2{
 {
 	background-color: rgba(240,240,240,0.0);
 }
+.graybox
+{
+	background-color: rgba(0,0,0,0.4) !important;
+}
 
+.blackbox
+{
+	background-color: rgba(0,0,0,0.8) !important;
+}
+
+.highlight-white
+{
+	background-color: rgba(240,240,240,0.8);
+	/*background-clip: content-box;*/
+}
+
+.double-white
+{
+	background-color: rgba(240,240,240,1);
+}
+
+.carousel
+{
+ margin: auto;
+ max-width: 95%;
+}
+
+.small-0
+{
+	display: none;
+}
